@@ -19,8 +19,12 @@ fn main() {
     println!("Seu nome é {} e você tem {} anos", name, age);
     println!("");
 
+    press_enter_to_close_window();
+}
+
+fn press_enter_to_close_window() {
     println!("Pressione qualquer tecla para fechar a janela...");
 
     let mut input = String::new();
-    io::stdin().read_line(&mut input).expect("Ocorreu um erro");   
+    io::stdin().read_line(&mut input).expect("Ocorreu um erro"); 
 }
